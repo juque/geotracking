@@ -1,0 +1,2 @@
+module GeoTrackingsHelper
+end
