@@ -1,0 +1,23 @@
+<div class="w-full max-w-xs">
+
+  <%= form_with(model: geo_tracking, class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4") do |form| %> 
+
+    <div>
+      <%= form.label :lat, class: 'block text-gray-700 text-sm font-bold mb-2' %> 
+      <%= form.text_field :lat, class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'  %> 
+      <%= inline_error_for(:lat, geo_tracking) %>
+    </div>
+
+    <div>
+      <%= form.label :long, class: 'block text-gray-700 text-sm font-bold mb-2' %> 
+      <%= form.text_field :long, class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'  %> 
+      <%= inline_error_for(:long, geo_tracking) %>
+    </div>
+
+    <div class="mt-5">
+      <%= form.submit class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'  %>  
+    </div>
+
+  <% end %>
+
+</div>

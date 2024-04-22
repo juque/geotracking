@@ -1,1 +1,10 @@
 <h1 class="text-2xl font-bold py-5">GeoTracking</h1>
+
+<% flash.each do |type, msg| %>
+  <div class="<%= type %> p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50">
+    <%= msg %>
+  </div>
+<% end %>
+
+
+<%= render "form", geo_tracking: @geo_tracking %> 
